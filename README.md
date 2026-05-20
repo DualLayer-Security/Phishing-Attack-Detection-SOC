@@ -53,9 +53,9 @@ El usuario hace clic en el enlace e introduce credenciales, las cuales son inter
 
 Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
-![Lab Setup](./evidence/01-lab-setup-ubuntu-ip.png)
+![Lab Setup](/01-IP-Ubuntu.png)
 
-![Juice Shop Running](./evidence/02-juice-shop-running.png)
+![Juice Shop Running](/02-Juice-Shop-Running.png)
 
 ---
 
@@ -63,7 +63,7 @@ Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
 Se simula un correo electrónico con enlace malicioso.
 
-![Phishing Email](./evidence/03-phishing-email.png)
+![Phishing Email](/03-Phishing-Email.png)
 
 ---
 
@@ -71,7 +71,7 @@ Se simula un correo electrónico con enlace malicioso.
 
 El usuario hace clic en el enlace y accede a la página de login.
 
-![Phishing Link Click](./evidence/04-phishing-link-click.png)
+![Phishing Link Click](./04-Phishing-Link-Click.png)
 
 ---
 
@@ -79,7 +79,7 @@ El usuario hace clic en el enlace y accede a la página de login.
 
 El usuario introduce credenciales en la página falsa.
 
-![User Login Attempt](./evidence/05-user-login-attempt.png)
+![User Login Attempt](./05-User-Login-Attempt.png)
 
 ---
 
@@ -87,7 +87,7 @@ El usuario introduce credenciales en la página falsa.
 
 Se valida la comunicación entre máquinas dentro del laboratorio.
 
-![Network Connection](./evidence/06-network-Connection.png)
+![Network Connection](./06-Network-Connection.png)
 
 ---
 
@@ -95,7 +95,7 @@ Se valida la comunicación entre máquinas dentro del laboratorio.
 
 Se intercepta la petición HTTP con las credenciales introducidas.
 
-![Credentials Captured](./evidence/07-credentials-captured-burp.png)
+![Credentials Captured](./evidence/07-Credentials-Captured-Burp.png)
 
 ---
 
@@ -103,7 +103,7 @@ Se intercepta la petición HTTP con las credenciales introducidas.
 
 Se analiza la petición en Burp Repeater para inspeccionar la respuesta del servidor.
 
-![Repeater Analysis](./evidence/08-login-request-repeater.png)
+![Repeater Analysis](./08-Login-Request-Repeater.png)
 
 ---
 
