@@ -4,44 +4,44 @@
 
 Este proyecto simula un ataque de phishing en un laboratorio controlado con el objetivo de analizar el comportamiento del usuario, capturar credenciales y detectar indicadores de compromiso (IoC) desde una perspectiva SOC.
 
-Se ha utilizado una aplicación vulnerable (OWASP Juice Shop) junto con herramientas de análisis como Burp Suite para inspeccionar el tráfico HTTP y evidenciar el ataque.
+Se utiliza una aplicación vulnerable (**OWASP Juice Shop**) junto con herramientas como **Burp Suite** para inspeccionar el tráfico HTTP y evidenciar el ataque.
 
 ---
 
 ## 🎯 Objetivos
 
-- Simular una campaña de phishing realista
-- Analizar el comportamiento del usuario ante un enlace malicioso
-- Capturar tráfico HTTP y credenciales
-- Identificar indicadores de phishing
-- Documentar el proceso como un caso SOC real
+- Simular una campaña de phishing realista  
+- Analizar la interacción del usuario ante enlaces maliciosos  
+- Capturar tráfico HTTP y credenciales  
+- Identificar indicadores de phishing  
+- Documentar el proceso de ataque y análisis  
 
 ---
 
 ## 🧪 Entorno de laboratorio
 
-| Máquina | Rol |
-|--------|-----|
-| Kali Linux | Atacante / Análisis |
-| Ubuntu Server | Víctima (Juice Shop) |
+| Máquina        | Rol                  |
+|---------------|---------------------|
+| Kali Linux    | Atacante / Análisis |
+| Ubuntu Server | Víctima (Juice Shop)|
 
 ---
 
 ## ⚙️ Tecnologías utilizadas
 
-- OWASP Juice Shop
-- Burp Suite
-- Docker
-- Kali Linux
-- Ubuntu Server
+- OWASP Juice Shop  
+- Burp Suite  
+- Docker  
+- Kali Linux  
+- Ubuntu Server  
 
 ---
 
 ## 🚨 Escenario del ataque
 
-Se simula el envío de un correo de phishing que contiene un enlace hacia una página de login falsa (Juice Shop).
+Se simula el envío de un correo de phishing que contiene un enlace hacia una página de login falsa.
 
-El usuario hace clic en el enlace e introduce credenciales, las cuales son interceptadas mediante Burp Suite.
+El usuario accede al enlace e introduce sus credenciales, las cuales son interceptadas mediante un proxy (**Burp Suite**) para su análisis.
 
 ---
 
@@ -51,10 +51,9 @@ El usuario hace clic en el enlace e introduce credenciales, las cuales son inter
 
 ### 1. Preparación del laboratorio
 
-Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
+Se despliega el servidor vulnerable (Juice Shop) en Ubuntu.
 
-![Lab Setup](/01-IP-Ubuntu.png)
-
+![Lab Setup](./01-IP-Ubuntu.png)
 ![Juice Shop Running](./02-Juice-Shop-Running.png)
 
 ---
@@ -63,15 +62,15 @@ Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
 Se simula un correo electrónico con enlace malicioso.
 
-![Phishing Email](03-Pishing-Email.png)
+![Phishing Email](./03-Phishing-Email.png)
 
 ---
 
 ### 3. Interacción del usuario
 
-El usuario hace clic en el enlace y accede a la página de login.
+El usuario accede al enlace y es redirigido a la página de login.
 
-![Phishing Link Click](04-Pishing-Link-Click.png)
+![Phishing Link Click](./04-Phishing-Link-Click.png)
 
 ---
 
@@ -79,7 +78,7 @@ El usuario hace clic en el enlace y accede a la página de login.
 
 El usuario introduce credenciales en la página falsa.
 
-![User Login Attempt](/05-User-Login-Attempt.png)
+![User Login Attempt](./05-User-Login-Attempt.png)
 
 ---
 
@@ -87,7 +86,7 @@ El usuario introduce credenciales en la página falsa.
 
 Se valida la comunicación entre máquinas dentro del laboratorio.
 
-![Network Connection](/06-Network-Connection.png)
+![Network Connection](./06-Network-Connection.png)
 
 ---
 
@@ -95,7 +94,7 @@ Se valida la comunicación entre máquinas dentro del laboratorio.
 
 Se intercepta la petición HTTP con las credenciales introducidas.
 
-![Credentials Captured](07-Credentials-Captured-Burp.png)
+![Credentials Captured](./07-Credentials-Captured-Burp.png)
 
 ---
 
@@ -107,33 +106,31 @@ Se analiza la petición en Burp Repeater para inspeccionar la respuesta del serv
 
 ---
 
-## 🧠 Análisis SOC
+## 🧠 Indicadores de compromiso (IoC)
 
-Durante la simulación se identificaron los siguientes indicadores de compromiso:
-
-- URL sospechosa (IP en lugar de dominio)
-- Página de login no verificada
-- Captura de credenciales en texto plano
-- Peticiones HTTP interceptadas
-- Comportamiento típico de phishing
+- Uso de IP en lugar de dominio  
+- Página de login no verificada  
+- Envío de credenciales en texto plano  
+- Tráfico HTTP sin cifrar  
+- Patrón típico de phishing  
 
 ---
 
 ## 📊 Resultados
 
-- Se logró simular un ataque de phishing completo
-- Se capturaron credenciales mediante interceptación
-- Se analizaron las peticiones HTTP
-- Se documentaron evidencias del ataque
+- Simulación completa del ataque de phishing  
+- Captura de credenciales en tránsito  
+- Análisis del tráfico HTTP  
+- Identificación de indicadores de compromiso  
 
 ---
 
 ## 🛡️ Recomendaciones
 
-- Formación en concienciación de phishing
-- Uso de autenticación multifactor (MFA)
-- Implementación de filtros de correo
-- Monitorización de tráfico HTTP/HTTPS
+- Formación en concienciación de phishing  
+- Uso de autenticación multifactor (MFA)  
+- Implementación de HTTPS  
+- Monitorización del tráfico de red  
 - Uso de herramientas SIEM
-## 📁 Estructura del proyecto
+
 
