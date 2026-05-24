@@ -63,7 +63,7 @@ Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
 Se simula un correo electrónico con enlace malicioso.
 
-[![Phishing Email](/03-Phishing-Email.png)
+[Phishing Email](/03-Phishing-Email.png)
 
 ---
 
@@ -87,7 +87,7 @@ El usuario introduce credenciales en la página falsa.
 
 Se valida la comunicación entre máquinas dentro del laboratorio.
 
-![Network Connection](./06-Network-Connection.png)
+![Network Connection](/06-Network-Connection.png)
 
 ---
 
