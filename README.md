@@ -95,7 +95,7 @@ Se valida la comunicación entre máquinas dentro del laboratorio.
 
 Se intercepta la petición HTTP con las credenciales introducidas.
 
-![Credentials Captured](./evidence/07-Credentials-Captured-Burp.png)
+![Credentials Captured](07-Credentials-Captured-Burp.png)
 
 ---
 
