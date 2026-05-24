@@ -63,7 +63,7 @@ Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
 Se simula un correo electrónico con enlace malicioso.
 
-![Phishing Email](./03-Phishing-Email.png)
+![Phishing Email](03-Pishing-Email.png)
 
 ---
 
