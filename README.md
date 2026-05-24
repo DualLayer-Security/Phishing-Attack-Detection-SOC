@@ -71,7 +71,7 @@ Se simula un correo electrónico con enlace malicioso.
 
 El usuario hace clic en el enlace y accede a la página de login.
 
-![Phishing Link Click](/04-Phishing-Link-Click.png)
+![Phishing Link Click](04-Pishing-Link-Click.png)
 
 ---
 
