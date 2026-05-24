@@ -55,7 +55,7 @@ Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
 ![Lab Setup](/01-IP-Ubuntu.png)
 
-![Juice Shop Running](/02-Juice-Shop-Running.png)
+![Juice Shop Running](./02-Juice-Shop-Running.png)
 
 ---
 
@@ -63,7 +63,7 @@ Se levanta el servidor vulnerable (Juice Shop) en Ubuntu.
 
 Se simula un correo electrónico con enlace malicioso.
 
-[Phishing Email] (/03-Phishing-Email.png)
+![Phishing Email](./03-Phishing-Email.png)
 
 ---
 
